@@ -7,12 +7,16 @@
 //
 
 #import "KPAppDelegate.h"
-
+#import "KPViewController.h"
 @implementation KPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+  KPViewController *controller = [[KPViewController alloc] initWithNibName:@"KPViewController" bundle:nil];
+  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  [self.window setRootViewController:controller];
+  [self.window setBackgroundColor:[UIColor whiteColor]];
+  [self.window makeKeyAndVisible];
     return YES;
 }
 

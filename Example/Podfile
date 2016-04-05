@@ -5,11 +5,3 @@ target 'KPTableView_Example', :exclusive => true do
   pod "KPTableView", :path => "../"
 end
 
-target 'KPTableView_Tests', :exclusive => true do
-  pod "KPTableView", :path => "../"
-
-  pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
-end
