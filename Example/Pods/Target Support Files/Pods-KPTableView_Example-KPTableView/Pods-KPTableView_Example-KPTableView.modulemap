@@ -1,0 +1,6 @@
+framework module KPTableView {
+  umbrella header "Pods-KPTableView_Example-KPTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
